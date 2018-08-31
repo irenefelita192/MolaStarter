@@ -1,0 +1,93 @@
+.root {
+    overflow: hidden;
+    width: 1190px;
+}
+
+.historyWrapper {
+    overflow-y: auto;
+    width: 1220px;
+    margin: 185px auto 0;
+    height: calc(100vh - 185px);
+}
+
+.container {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 40px;
+}
+
+.movieDetailWrapper {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px;
+    color: #FFFFFF;
+    width: calc(100% - 305px);
+}
+
+.movieImageWrapper {
+    position: relative;
+    display: inline-block;
+    width: 265px;
+    cursor: pointer;
+}
+
+.movieImageWrapper > img {
+    width: 100%;
+}
+
+.movieDurationBar {
+   position: absolute;
+   bottom: 15px;
+   width: calc(100% - 40px);
+   height: 4px;
+   background-color: #C1C1C1;
+   margin: 0 20px;
+}
+
+.moviePlayedBar {
+    position: absolute;
+    background-color: #E10B14;
+    height: 100%;
+}
+
+.movieTitle {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 4px;
+}
+
+.movieChapter {
+    font-size: 16px;
+    padding-bottom: 4px;
+}
+
+.movieDuration {
+    font-size: 20px;
+    padding-bottom: 4px;
+}
+
+@media screen and (max-width: 1200px) {
+    .root {
+        width: 960px;
+    }
+
+    .historyWrapper {
+        width: 1000px;
+    }
+
+    .movieImageWrapper {
+        width: 240px;
+    }
+
+    .movieTitle {
+        font-size: 16px;
+    }
+    
+    .movieChapter {
+        font-size: 14px;
+    }
+    
+    .movieDuration {
+        font-size: 18px;
+    }
+}
